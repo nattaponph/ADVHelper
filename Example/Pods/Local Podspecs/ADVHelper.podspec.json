@@ -1,0 +1,22 @@
+{
+  "name": "ADVHelper",
+  "version": "0.1.0",
+  "summary": "A short description of ADVHelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nattaponph58@nu.ac.th/ADVHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nattaponph58@nu.ac.th": "nattaponph58@nu.ac.th"
+  },
+  "source": {
+    "git": "https://github.com/nattaponph58@nu.ac.th/ADVHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ADVHelper/Classes/**/*"
+}

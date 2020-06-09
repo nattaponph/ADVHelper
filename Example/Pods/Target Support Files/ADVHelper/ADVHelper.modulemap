@@ -1,0 +1,6 @@
+framework module ADVHelper {
+  umbrella header "ADVHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

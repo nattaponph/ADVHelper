@@ -1,0 +1,16 @@
+PODS:
+  - ADVHelper (0.1.0)
+
+DEPENDENCIES:
+  - ADVHelper (from `../`)
+
+EXTERNAL SOURCES:
+  ADVHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADVHelper: fea67d9d489842ccf03560ede0381f85aa34dac9
+
+PODFILE CHECKSUM: 90cfc70943c169993d94b54c7cb2e668a59a8fe7
+
+COCOAPODS: 1.9.3

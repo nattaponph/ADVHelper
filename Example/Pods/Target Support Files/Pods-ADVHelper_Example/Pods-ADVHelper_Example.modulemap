@@ -1,0 +1,6 @@
+framework module Pods_ADVHelper_Example {
+  umbrella header "Pods-ADVHelper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
