@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ADVHelper_Example' do
+  pod 'ADVHelper', :path => '../'
+
+  target 'ADVHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
