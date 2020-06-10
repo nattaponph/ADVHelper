@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ADVHelper
+
+  Created by ณัฐพล โพธิ์ธิมา on 10/6/2563 BE.
+  Copyright © 2563 CocoaPods. All rights reserved.
+*/
+
+"ADVHelper" = "ผู้ช่วย ADV";
+"Placeholder" = "กรุณากรอกข้อมูล";
+"Button 1" = "ปุ่ม 1";
+"Button 2" = "ปุ่ม 2";
+"Button 3" = "ปุ่ม 3";
