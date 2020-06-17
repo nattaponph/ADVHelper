@@ -160,13 +160,11 @@ To hide a loader
 buttonBtn.hideLoader()
 ```
 
-#### Using ADVHelper in Storyboard
+#### Using Button in Storyboard
 
-ADVHelper now provides user interface support for View, ImageView, Label, Button, TextField and TextView.
+###### - Border
 
-1. Drag a UI into Storyboard.
-2. Set class to "View", "ImageView", "Label", "Button", "TextField", and "TextView".
-3. Set up attributes inspection.
+![Border_Btn](Screenshot/Border_Btn.png)
 
 ## Example
 
