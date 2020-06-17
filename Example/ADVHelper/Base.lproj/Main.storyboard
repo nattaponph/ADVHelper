@@ -439,8 +439,22 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Button"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onButtonClicked:" destination="Cy9-T8-ciq" eventType="touchUpInside" id="omL-cz-Fla"/>

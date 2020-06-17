@@ -184,6 +184,28 @@ Parameter | Type | Description | Default
 ------------ | ------------- | ------------- | ------------- 
 cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
 
+###### - Shadow
+
+<img src="Screenshot/Shadow_Btn.png" alt="" width="200"/> <img src="Screenshot/Shadow2_Btn.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+shadowColor | UIColor  | The color of the layer’s shadow. | UIColor.clear 
+shadowOpacity | Float  | The opacity of the layer’s shadow. | 0 
+shadowOffset | CGSize  | The offset (in points) of the layer’s shadow. | CGSize.zero 
+shadowRadius | CGFloat  | The blur radius (in points) used to render the layer’s shadow. | 0 
+
+###### - Gradient Background
+
+<img src="Screenshot/GradientBackground_Btn.png" alt="" width="200"/> <img src="Screenshot/GradientBackground2_Btn.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+gradientEnabled | Bool  | Enable gradient background.  | false 
+gradientStartColor | UIColor  | Start color gradient background.  | UIColor.clear 
+gradientEndColor | UIColor  | End color gradient background.  | UIColor.clear 
+gradientHorizontal | Bool  | Is the horizontal gradient background.  | false 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
