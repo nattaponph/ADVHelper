@@ -64,78 +64,78 @@ Example function `setText()`
 
 #### Using String Extension programmatically
 
-- DateFormatter
+**- DateFormatter**
 
-  - Function `dateFormat` for set output `format`
+- Function `dateFormat` for set output `format`
   
-  In this function, it supports the input formats `yyyy-MM-dd HH: mm: ss` and `yyyy-MM-dd`. And default local date for input `en`. And local date for output are based on `Localize Language`.
+In this function, it supports the input formats `yyyy-MM-dd HH: mm: ss` and `yyyy-MM-dd`. And default local date for input `en`. And local date for output are based on `Localize Language`.
   
-  Example input date
+Example input date
 ```swift
 let inputDateStr = "2020-06-17 10:20:30"
 ```
   
-  Example of use
+Example of use
 ```swift
 titleLabel.text = inputDateStr.dateFormat(format: "dd/MM/yyyy HH:mm")
 ```
   
-  Output
+Output
 ```
 17/06/2020 10:20
 ```
   
-  - Function `dateFormat` for set `fromFormat` and `toFormat`
+- Function `dateFormat` for set `fromFormat` and `toFormat`
   
-  In this function, it default local date for input `en`. And local date for output are based on `Localize Language`.
+In this function, it default local date for input `en`. And local date for output are based on `Localize Language`.
   
-  Example input date
+Example input date
 ```swift
 let inputDateStr = "2020-06-17 10:20:30"
 ```
   
-  Example of use
+Example of use
 ```swift
 titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", toFormat: "dd/MM/yyyy HH:mm")
 ```
   
-  Output
+Output
 ```
 17/06/2020 10:20
 ```
 
-  - Function `dateFormat` for set `fromFormat` `toFormat` and `toLocaleIdentifier`
+- Function `dateFormat` for set `fromFormat` `toFormat` and `toLocaleIdentifier`
   
-  In this function, it default local date for input `en`.
+In this function, it default local date for input `en`.
   
-  Example input date
+Example input date
 ```swift
 let inputDateStr = "2020-06-17 10:20:30"
 ```
   
-  Example of use
+Example of use
 ```swift
 titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", toFormat: "dd/MM/yyyy HH:mm", toLocaleIdentifier: "th")
 ```
   
-  Output
+Output
 ```
 17/06/2563 10:20
 ```
 
-  - Function `dateFormat` for all set `fromFormat` `fromLocaleIdentifier` `toFormat` and `toLocaleIdentifier`
+- Function `dateFormat` for all set `fromFormat` `fromLocaleIdentifier` `toFormat` and `toLocaleIdentifier`
   
-  Example input date
+Example input date
 ```swift
 let inputDateStr = "2563-06-17 10:20:30"
 ```
   
-  Example of use
+Example of use
 ```swift
 titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", fromLocaleIdentifier: "th", toFormat: "dd/MM/yyyy HH:mm", toLocaleIdentifier: "en")
 ```
   
-  Output
+Output
 ```
 17/06/2020 10:20
 ```
@@ -144,7 +144,9 @@ titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", fro
 
 #### Using Button programmatically
 
-- Loading
+**- Loading**
+
+![Loading_Btn](Screenshot/Loading_Btn.gif)
 
 To show a loader inside the button, and enable or disable user interection while loading
 
@@ -157,8 +159,6 @@ To hide a loader
 ```swift
 buttonBtn.hideLoader()
 ```
-
-![Loading_Btn](Screenshot/Loading_Btn.gif)
 
 #### Using ADVHelper in Storyboard
 
