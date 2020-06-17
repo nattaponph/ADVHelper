@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -221,6 +222,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onButtonTwoClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZVy-TB-ZFr"/>
+                                            <segue destination="rU3-lD-FuZ" kind="show" id="7aI-5k-AL8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-i4-nSL" customClass="Button" customModule="ADVHelper">
@@ -270,6 +272,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onButtonThreeClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Dj-zU-tb5"/>
+                                            <segue destination="F0Y-Mi-bsc" kind="show" id="n9E-FP-o6K"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -344,6 +347,120 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
+        </scene>
+        <!--Example Table View Controller-->
+        <scene sceneID="6xd-4F-fcn">
+            <objects>
+                <viewController id="F0Y-Mi-bsc" customClass="ExampleTableViewController" customModule="ADVHelper_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IYg-Z8-VkI"/>
+                        <viewControllerLayoutGuide type="bottom" id="B80-mD-bh6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSw-c5-fbj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cSr-nC-L2O" customClass="TableView" customModule="ADVHelper">
+                                <rect key="frame" x="8" y="8" width="359" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="F0Y-Mi-bsc" id="fx9-Bu-3WA"/>
+                                    <outlet property="delegate" destination="F0Y-Mi-bsc" id="IOn-0I-c6D"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cSr-nC-L2O" firstAttribute="leading" secondItem="CSw-c5-fbj" secondAttribute="leading" constant="8" id="6UQ-md-FuX"/>
+                            <constraint firstItem="B80-mD-bh6" firstAttribute="top" secondItem="cSr-nC-L2O" secondAttribute="bottom" constant="8" id="8eX-eJ-Yij"/>
+                            <constraint firstAttribute="trailing" secondItem="cSr-nC-L2O" secondAttribute="trailing" constant="8" id="WJd-ju-gVw"/>
+                            <constraint firstItem="cSr-nC-L2O" firstAttribute="top" secondItem="IYg-Z8-VkI" secondAttribute="bottom" constant="8" id="rLV-uc-IOS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0nL-qi-Hb0"/>
+                    <connections>
+                        <outlet property="dataTableView" destination="cSr-nC-L2O" id="KZd-Qk-qDo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eh2-AB-1Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="134"/>
+        </scene>
+        <!--Example Collection View Controller-->
+        <scene sceneID="4Ad-f3-pMa">
+            <objects>
+                <viewController id="rU3-lD-FuZ" customClass="ExampleCollectionViewController" customModule="ADVHelper_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2b6-7C-tZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gt8-Ld-Qxz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fJN-zO-fUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z1q-Px-UyL" customClass="CollectionView" customModule="ADVHelper">
+                                <rect key="frame" x="8" y="8" width="359" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9th-Tc-7Us">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IQQ-a3-gve">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="S8T-Wj-erN">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rU3-lD-FuZ" id="7QF-ik-MGf"/>
+                                    <outlet property="delegate" destination="rU3-lD-FuZ" id="8Uc-B3-7ig"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gt8-Ld-Qxz" firstAttribute="top" secondItem="z1q-Px-UyL" secondAttribute="bottom" constant="8" id="THx-7E-yhd"/>
+                            <constraint firstAttribute="trailing" secondItem="z1q-Px-UyL" secondAttribute="trailing" constant="8" id="ghz-uX-oA5"/>
+                            <constraint firstItem="z1q-Px-UyL" firstAttribute="top" secondItem="2b6-7C-tZa" secondAttribute="bottom" constant="8" id="u3r-Y6-1qX"/>
+                            <constraint firstItem="z1q-Px-UyL" firstAttribute="leading" secondItem="fJN-zO-fUP" secondAttribute="leading" constant="8" id="wgb-G4-H6K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZEI-KI-tIx"/>
+                    <connections>
+                        <outlet property="dataCollectionView" destination="z1q-Px-UyL" id="czc-CB-Pra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrs-3j-9AV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="806"/>
         </scene>
     </scenes>
     <resources>
