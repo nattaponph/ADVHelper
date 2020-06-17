@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0ABE62249139AD00B6BC89 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABE64249139AD00B6BC89 /* Localizable.strings */; };
+		3D86EE082499C23C00B1FCCD /* ForScreenshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86EE072499C23C00B1FCCD /* ForScreenshotViewController.swift */; };
 		3DFB757B24987A180088D835 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB757A24987A180088D835 /* ExampleTableViewController.swift */; };
 		3DFB757F2498AC620088D835 /* ExampleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB757E2498AC620088D835 /* ExampleCollectionViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		3D0ABE6824913AD400B6BC89 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
 		3D0ABE6924913AD500B6BC89 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3D0ABE6A24913AE400B6BC89 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3D86EE072499C23C00B1FCCD /* ForScreenshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForScreenshotViewController.swift; sourceTree = "<group>"; };
 		3DFB757A24987A180088D835 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		3DFB757E2498AC620088D835 /* ExampleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewController.swift; sourceTree = "<group>"; };
 		57650521EB4D419841293AAB /* Pods-ADVHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADVHelper_Tests.release.xcconfig"; path = "Target Support Files/Pods-ADVHelper_Tests/Pods-ADVHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				3DFB757A24987A180088D835 /* ExampleTableViewController.swift */,
 				3DFB757E2498AC620088D835 /* ExampleCollectionViewController.swift */,
+				3D86EE072499C23C00B1FCCD /* ForScreenshotViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFB757B24987A180088D835 /* ExampleTableViewController.swift in Sources */,
+				3D86EE082499C23C00B1FCCD /* ForScreenshotViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				3DFB757F2498AC620088D835 /* ExampleCollectionViewController.swift in Sources */,

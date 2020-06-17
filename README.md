@@ -20,6 +20,8 @@ pod 'ADVHelper'
 
 ## Usage
 
+### - ADVHelper
+
 #### Using ADVHelper programmatically
 
 Import ADVHelper at the top of each Swift file that will be used.
@@ -28,7 +30,9 @@ Import ADVHelper at the top of each Swift file that will be used.
 import ADVHelper
 ```
 
-**Localize**<br>
+### - Localize
+
+#### Using Localize programmatically
 
 Add `.localized()` following any `String` object you want translated:
 ```swift
@@ -55,6 +59,14 @@ Example function `setText()`
     buttonBtn.localizeKey = "String".localized()
 }
 ```
+
+### - String Extension
+
+#### Using String Extension programmatically
+
+* DateFormatter
+
+
 
 **Button**<br>
 
@@ -94,3 +106,4 @@ ADVHelper is available under the MIT license. See the LICENSE file for more info
 
 * [Kenneth Tsang](https://cocoapods.org/pods/GrowingTextView)
 * [Roy Marmelstein](https://cocoapods.org/pods/Localize-Swift)
+* [Taha Sönmez](https://medium.com/@mtssonmez/handle-empty-tableview-in-swift-4-ios-11-23635d108409)

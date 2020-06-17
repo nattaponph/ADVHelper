@@ -184,6 +184,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onButtonOneClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W9J-5E-gW7"/>
+                                            <segue destination="Cy9-T8-ciq" kind="show" id="k6Z-7l-5nu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-06-vma" customClass="Button" customModule="ADVHelper">
@@ -396,6 +397,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eh2-AB-1Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860" y="134"/>
+        </scene>
+        <!--For Screenshot View Controller-->
+        <scene sceneID="4sC-6X-4Qi">
+            <objects>
+                <viewController id="Cy9-T8-ciq" customClass="ForScreenshotViewController" customModule="ADVHelper_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="feG-l8-I7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="7er-82-t1D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyZ-q8-Om1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-Pm-Hs4" customClass="Label" customModule="ADVHelper">
+                                <rect key="frame" x="8" y="308.5" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g7n-oD-Kd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8eq-Pm-Hs4" secondAttribute="trailing" constant="8" id="NyW-eN-Xnk"/>
+                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="centerY" secondItem="nyZ-q8-Om1" secondAttribute="centerY" id="aDi-nx-uSE"/>
+                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="leading" secondItem="nyZ-q8-Om1" secondAttribute="leading" constant="8" id="eFH-zv-RZV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pbo-go-37w"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="8eq-Pm-Hs4" id="WGW-Lm-Ayh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdS-9x-7Om" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="806"/>
         </scene>
         <!--Example Collection View Controller-->
         <scene sceneID="4Ad-f3-pMa">
