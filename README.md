@@ -162,9 +162,19 @@ buttonBtn.hideLoader()
 
 #### Using Button in Storyboard
 
+The steps for use
+1. Drag a UIButton into Storyboard.
+2. Set class to `Button`
+3. Set up attributes inspection.
+
 ###### - Border
 
 ![Border_Btn](Screenshot/Border_Btn.png)
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | Border color  | UIColor.clear 
+borderWidth | CGFloat  | Border width  | 0 
 
 ## Example
 
