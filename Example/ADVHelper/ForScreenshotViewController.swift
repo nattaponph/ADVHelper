@@ -59,11 +59,11 @@ class ForScreenshotViewController: UIViewController {
     // MARK: IBAction
     
     @IBAction func onButtonClicked(_ sender: Button) {
-        if sender.isLoading {
-            sender.hideLoader()
-        } else {
-            sender.showLoader()
-        }
+//        if sender.isLoading {
+//            sender.hideLoader()
+//        } else {
+//            sender.showLoader()
+//        }
     }
     
     /*

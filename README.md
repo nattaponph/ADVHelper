@@ -206,6 +206,15 @@ gradientStartColor | UIColor  | Start color gradient background.  | UIColor.clea
 gradientEndColor | UIColor  | End color gradient background.  | UIColor.clear 
 gradientHorizontal | Bool  | Is the horizontal gradient background.  | false 
 
+###### - Click Animate
+
+<img src="Screenshot/ClickAnimate_Btn.gif" alt="" width="200"/> <img src="Screenshot/ClickAnimate2_Btn.gif" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+animatedScaleWhenHighlighted | CGFloat  | Animation scale when highlighted.  | 1.0 
+animatedScaleDurationWhenHighlighted | Double  | Animation scale duration when highlighted.  | 0.2 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
