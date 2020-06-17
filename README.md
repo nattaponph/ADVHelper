@@ -169,7 +169,7 @@ The steps for use
 
 ###### - Border
 
-![Border_Btn](Screenshot/Border_Btn.png)
+<img src="Screenshot/Border_Btn.png" alt="" width="200"/>
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
@@ -178,7 +178,7 @@ borderWidth | CGFloat  | The width of the layer’s border.  | 0
 
 ###### - Corner Radius
 
-<img src="Screenshot/CornerRadius_btn.png" alt="Overview" width="200"/> <img src="Screenshot/CornerRadiusFull_btn.png" alt="Overview Dark" width="200"/>
+<img src="Screenshot/CornerRadius_btn.png" alt="" width="200"/> <img src="Screenshot/CornerRadiusFull_btn.png" alt="" width="200"/>
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
