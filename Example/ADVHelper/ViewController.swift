@@ -69,30 +69,15 @@ class ViewController: UIViewController {
     // MARK: IBAction
     
     @IBAction func onButtonOneClicked(_ sender: Button) {
-        if sender.isLoading {
-            sender.hideLoader()
-            self.changeLanguage()
-        } else {
-            sender.showLoader()
-        }
+        
     }
     
     @IBAction func onButtonTwoClicked(_ sender: Button) {
-        if sender.isLoading {
-            sender.hideLoader()
-            self.changeLanguage()
-        } else {
-            sender.showLoader()
-        }
+        
     }
     
     @IBAction func onButtonThreeClicked(_ sender: Button) {
-        if sender.isLoading {
-            sender.hideLoader()
-            self.changeLanguage()
-        } else {
-            sender.showLoader()
-        }
+        
     }
     
     // MARK: Private Function

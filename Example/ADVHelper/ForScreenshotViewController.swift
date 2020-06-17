@@ -12,6 +12,7 @@ import ADVHelper
 class ForScreenshotViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: Label!
+    @IBOutlet weak var buttonBtn: Button!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,11 @@ class ForScreenshotViewController: UIViewController {
     }
     
     private func onResume() {
-        let inputDateStr = "2020-06-17 10:20:30"
-        titleLabel.text = inputDateStr.dateFormat(<#T##fromFormat: String##String#>, <#T##fromLocaleIdentifier: String##String#>, <#T##toFormat: String##String#>, <#T##toLocaleIdentifier: String##String#>)
+        
+        let inputDateStr = "2563-06-17 10:20:30"
+        
+        titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", fromLocaleIdentifier: "th", toFormat: "dd/MM/yyyy HH:mm", toLocaleIdentifier: "en")
+        
     }
     
     private func setUpProgress() {
@@ -49,7 +53,17 @@ class ForScreenshotViewController: UIViewController {
     // MARK: Localized Text
     
     @objc func setText() {
-        
+        buttonBtn.localizeKey = "Button".localized()
+    }
+    
+    // MARK: IBAction
+    
+    @IBAction func onButtonClicked(_ sender: Button) {
+        if sender.isLoading {
+            sender.hideLoader()
+        } else {
+            sender.showLoader()
+        }
     }
     
     /*

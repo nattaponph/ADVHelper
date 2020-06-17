@@ -45,6 +45,32 @@ open class Button: UIButton {
         }
     }
     
+    //MARK: - Shadow
+    
+    @IBInspectable open var shadowColor: UIColor = UIColor.clear {
+        didSet {
+            self.layer.shadowColor = shadowColor.cgColor
+        }
+    }
+    
+    @IBInspectable open var shadowOpacity: Float = 0 {
+        didSet {
+            self.layer.shadowOpacity = shadowOpacity
+        }
+    }
+    
+    @IBInspectable open var shadowOffset: CGSize = CGSize.zero {
+        didSet {
+            self.layer.shadowOffset = shadowOffset
+        }
+    }
+    
+    @IBInspectable open var shadowRadius: CGFloat = 0 {
+        didSet {
+            self.layer.shadowRadius = shadowRadius
+        }
+    }
+    
     //MARK: - Gradient Background
     
     @IBInspectable open var gradientEnabled: Bool = false {
@@ -119,11 +145,7 @@ open class Button: UIButton {
     
     //MARK: - Ripple button
     
-    @IBInspectable open var ripple: Bool = false {
-        didSet {
-            self.clipsToBounds = true
-        }
-    }
+    @IBInspectable open var ripple: Bool = false
     
     @IBInspectable open var rippleColor: UIColor = UIColor(white: 1.0, alpha: 0.3)
     
@@ -240,9 +262,6 @@ open class Button: UIButton {
         }) { (finished) in
         }
     }
-    
-    override open func prepareForInterfaceBuilder() {
-    }
 
 }
 
@@ -255,6 +274,8 @@ extension Button: CAAnimationDelegate{
         guard ripple == true else {
             return true
         }
+        
+        self.clipsToBounds = true
         
         let tapLocation = touch.location(in: self)
         
@@ -301,6 +322,7 @@ extension Button: CAAnimationDelegate{
         if layer != nil{
             layer?.removeAnimation(forKey: "scale")
             layer?.removeFromSuperlayer()
+            self.clipsToBounds = false
         }
     }
 }
