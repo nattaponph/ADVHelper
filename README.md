@@ -20,7 +20,7 @@ pod 'ADVHelper'
 
 ## Usage
 
-### - ADVHelper
+### * ADVHelper
 
 #### Using ADVHelper programmatically
 
@@ -30,7 +30,7 @@ Import ADVHelper at the top of each Swift file that will be used.
 import ADVHelper
 ```
 
-### - Localize
+### * Localize
 
 #### Using Localize programmatically
 
@@ -60,7 +60,7 @@ Example function `setText()`
 }
 ```
 
-### - String Extension
+### * String Extension
 
 #### Using String Extension programmatically
 

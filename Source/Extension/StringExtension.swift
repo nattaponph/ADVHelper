@@ -11,7 +11,7 @@ public extension String {
     
     // MARK: Date Format
     
-    func dateFormat(_ format: String) -> String {
+    func dateFormat(format: String) -> String {
         let dateFormatter = DateFormatter()
         if self.count == 10 {
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -30,7 +30,7 @@ public extension String {
         }
     }
     
-    func dateFormat(_ fromFormat: String,_ toFormat: String) -> String {
+    func dateFormat(fromFormat: String, toFormat: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = fromFormat
         
@@ -45,7 +45,7 @@ public extension String {
         }
     }
     
-    func dateFormat(_ fromFormat: String, _ toFormat: String, _ toLocaleIdentifier: String) -> String {
+    func dateFormat(fromFormat: String, toFormat: String, toLocaleIdentifier: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = fromFormat
         
@@ -60,7 +60,7 @@ public extension String {
         }
     }
     
-    func dateFormat(_ fromFormat: String, _ fromLocaleIdentifier: String, _ toFormat: String, _ toLocaleIdentifier: String) -> String {
+    func dateFormat(fromFormat: String, fromLocaleIdentifier: String, toFormat: String, toLocaleIdentifier: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = fromFormat
         
