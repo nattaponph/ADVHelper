@@ -178,9 +178,7 @@ borderWidth | CGFloat  | The width of the layer’s border.  | 0
 
 ###### - Corner Radius
 
-![CornerRadius_btn](Screenshot/CornerRadius_btn.png)
-
-| <img src="Screenshot/CornerRadius_btn.png" alt="Overview" width="200"/> | <img src="Screenshot/CornerRadius_btn.png" alt="Overview Dark" width="200"/>  | 
+<img src="Screenshot/CornerRadius_btn.png" alt="Overview" width="200"/> <img src="Screenshot/CornerRadiusFull_btn.png" alt="Overview Dark" width="200"/>
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
