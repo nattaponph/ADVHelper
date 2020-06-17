@@ -173,8 +173,18 @@ The steps for use
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
-borderColor | UIColor  | Border color  | UIColor.clear 
-borderWidth | CGFloat  | Border width  | 0 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+![CornerRadius_btn](Screenshot/CornerRadius_btn.png)
+
+| <img src="Screenshot/CornerRadius_btn.png" alt="Overview" width="200"/> | <img src="Screenshot/CornerRadius_btn.png" alt="Overview Dark" width="200"/>  | 
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
 
 ## Example
 
