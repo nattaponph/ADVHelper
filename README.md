@@ -64,7 +64,7 @@ Example function `setText()`
 
 #### Using String Extension programmatically
 
-**- DateFormatter**
+##### DateFormatter
 
 - Function `dateFormat` for set output `format`
   
@@ -144,7 +144,7 @@ Output
 
 #### Using Button programmatically
 
-**- Loading**
+##### Loading
 
 ![Loading_Btn](Screenshot/Loading_Btn.gif)
 
