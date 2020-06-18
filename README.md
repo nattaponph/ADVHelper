@@ -144,6 +144,13 @@ Output
 
 #### Using Button programmatically
 
+###### - Localize
+
+Define text with `localizeKey`
+```swift
+buttonBtn.localizeKey = "Button".localized()
+```
+
 ###### - Loading
 
 ![Loading_Btn](Screenshot/Loading_Btn.gif)
@@ -241,6 +248,184 @@ imageAlpha | CGFloat  | The image view's alpha value. | 1.0
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
 isUnderline | Bool  | Enable underline.  | false 
+
+### - Label
+
+#### Using Label programmatically
+
+###### - Localize
+
+Define text with `localizeKey`
+```swift
+titleLabel.localizeKey = "Label".localized()
+```
+
+#### Using Label in Storyboard
+
+The steps for use
+1. Drag a UILabel into Storyboard.
+2. Set class to `Label`
+3. Set up attributes inspection.
+
+###### - Border
+
+<img src="Screenshot/Border_Label.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+<img src="Screenshot/CornerRadius_Label.png" alt="" width="200"/> <img src="Screenshot/CornerRadiusFull_Label.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
+
+###### - Shadow
+
+<img src="Screenshot/Shadow_Label.png" alt="" width="200"/> <img src="Screenshot/Shadow2_Label.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+shadowColor | UIColor  | The color of the layer’s shadow. | UIColor.clear 
+shadowOpacity | Float  | The opacity of the layer’s shadow. | 0 
+shadowOffset | CGSize  | The offset (in points) of the layer’s shadow. | CGSize.zero 
+shadowRadius | CGFloat  | The blur radius (in points) used to render the layer’s shadow. | 0 
+
+###### - Underline
+
+<img src="Screenshot/Underline_Label.png" alt="" width="200"/> <img src="Screenshot/Underline2_Label.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+isUnderline | Bool  | Enable underline.  | false 
+
+### - TextField
+
+#### Using TextField programmatically
+
+###### - Localize
+
+Define placeholder with `localizeKey`
+```swift
+textFieldBox.localizeKey = "Placeholder".localized()
+```
+
+#### Using TextField in Storyboard
+
+The steps for use
+1. Drag a UITextField into Storyboard.
+2. Set class to `TextField`
+3. Set up attributes inspection.
+
+###### - Border
+
+<img src="Screenshot/Border_TextField.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+<img src="Screenshot/CornerRadius_TextField.png" alt="" width="200"/> <img src="Screenshot/CornerRadiusFull_TextField.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
+
+###### - Shadow
+
+<img src="Screenshot/Shadow_TextField.png" alt="" width="200"/> <img src="Screenshot/Shadow2_TextField.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+shadowColor | UIColor  | The color of the layer’s shadow. | UIColor.clear 
+shadowOpacity | Float  | The opacity of the layer’s shadow. | 0 
+shadowOffset | CGSize  | The offset (in points) of the layer’s shadow. | CGSize.zero 
+shadowRadius | CGFloat  | The blur radius (in points) used to render the layer’s shadow. | 0 
+
+###### - Gradient Background
+
+<img src="Screenshot/GradientBackground_TextField.png" alt="" width="200"/> <img src="Screenshot/GradientBackground2_TextField.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+gradientEnabled | Bool  | Enable gradient background.  | false 
+gradientStartColor | UIColor  | Start color gradient background.  | UIColor.clear 
+gradientEndColor | UIColor  | End color gradient background.  | UIColor.clear 
+gradientHorizontal | Bool  | Is the horizontal gradient background.  | false 
+
+###### - Padding
+
+None | Left | Right | Left & Right
+------------ | ------------- | ------------- | ------------- 
+<img src="Screenshot/PaddingNo_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingL_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingR_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingLR_TextField.png" alt="" width="200"/> 
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 0 
+paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 0 
+
+### - TextView
+
+#### Using TextView programmatically
+
+###### - Localize
+
+Define placeholder with `localizeKey`
+```swift
+textViewBox.localizeKey = "Placeholder".localized()
+```
+
+#### Using TextView in Storyboard
+
+The steps for use
+1. Drag a UITextView into Storyboard.
+2. Set class to `TextView`
+3. Set up attributes inspection.
+
+###### - Border
+
+<img src="Screenshot/Border_TextView.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+<img src="Screenshot/CornerRadius_TextView.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
+
+###### - Maximum length
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+maxLength | Int | The maximum character length. (0 means no limit) | 0 
+
+###### - Trim
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+trimWhiteSpaceWhenEndEditing | Bool | Trim whitespace and newline characters when end editing. | true 
+
+###### - Height
+
+<img src="Screenshot/Height_TextView.gif" alt="" width="250"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+minHeight | CGFloat | The minimum height limit. (0 means no limit) | 0 
+maxHeight | CGFloat | The maximum height limit. (0 means no limit) | 0 
 
 ## Example
 

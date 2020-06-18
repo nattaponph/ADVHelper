@@ -106,8 +106,10 @@ open class TextView: UITextView {
     // Maximum length of text. 0 means no limit.
     @IBInspectable open var maxLength: Int = 0
     
-    // Trim white space and newline characters when end editing. Default is true
+    // Trim whitespace and newline characters when end editing. Default is true
     @IBInspectable open var trimWhiteSpaceWhenEndEditing: Bool = true
+    
+    //MARK: - Height
     
     // Customization
     @IBInspectable open var minHeight: CGFloat = 0 {

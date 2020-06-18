@@ -36,9 +36,9 @@ class ForScreenshotViewController: UIViewController {
     
     private func onResume() {
         
-        let inputDateStr = "2563-06-17 10:20:30"
-        
-        titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", fromLocaleIdentifier: "th", toFormat: "dd/MM/yyyy HH:mm", toLocaleIdentifier: "en")
+//        let inputDateStr = "2563-06-17 10:20:30"
+//        
+//        titleLabel.text = inputDateStr.dateFormat(fromFormat: "yyyy-MM-dd HH:mm:ss", fromLocaleIdentifier: "th", toFormat: "dd/MM/yyyy HH:mm", toLocaleIdentifier: "en")
         
     }
     

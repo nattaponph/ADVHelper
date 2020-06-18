@@ -411,16 +411,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-Pm-Hs4" customClass="Label" customModule="ADVHelper">
-                                <rect key="frame" x="8" y="16" width="359" height="30"/>
+                                <rect key="frame" x="87.5" y="16" width="200" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="g7n-oD-Kd8"/>
+                                    <constraint firstAttribute="width" constant="200" id="BeL-qf-jCA"/>
+                                    <constraint firstAttribute="height" constant="40" id="g7n-oD-Kd8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowsOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderline" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiw-94-4Xm" customClass="Button" customModule="ADVHelper">
-                                <rect key="frame" x="112.5" y="303.5" width="150" height="40"/>
+                                <rect key="frame" x="112.5" y="16" width="150" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="8fb-c5-VX6"/>
@@ -449,14 +462,90 @@
                                     <action selector="onButtonClicked:" destination="Cy9-T8-ciq" eventType="touchUpInside" id="omL-cz-Fla"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="An object that displays an editable text area in your interface." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-JT-oc2" customClass="TextField" customModule="ADVHelper">
+                                <rect key="frame" x="112.5" y="16" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EbW-Ho-jK9"/>
+                                    <constraint firstAttribute="width" constant="150" id="gCC-FB-ioQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Placeholder"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                        <real key="value" value="-8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-X7-vna" customClass="TextView" customModule="ADVHelper">
+                                <rect key="frame" x="62.5" y="273.5" width="250" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cHo-P9-h2M"/>
+                                    <constraint firstAttribute="width" constant="250" id="lEe-V0-idP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Placeholder"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                        <real key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="hiw-94-4Xm" firstAttribute="centerY" secondItem="nyZ-q8-Om1" secondAttribute="centerY" id="1R5-Zo-Z1r"/>
-                            <constraint firstAttribute="trailing" secondItem="8eq-Pm-Hs4" secondAttribute="trailing" constant="8" id="NyW-eN-Xnk"/>
-                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="RbP-aG-ACR"/>
+                            <constraint firstItem="Bba-X7-vna" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="8Uu-Ad-tG5"/>
+                            <constraint firstItem="Bba-X7-vna" firstAttribute="centerY" secondItem="nyZ-q8-Om1" secondAttribute="centerY" id="BHt-DC-ua4"/>
+                            <constraint firstItem="MHr-JT-oc2" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="CJc-vK-MnG"/>
+                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="VG9-bL-26K"/>
+                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="ayd-cj-QUF"/>
                             <constraint firstItem="hiw-94-4Xm" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="cV0-2o-N3t"/>
-                            <constraint firstItem="8eq-Pm-Hs4" firstAttribute="leading" secondItem="nyZ-q8-Om1" secondAttribute="leading" constant="8" id="eFH-zv-RZV"/>
+                            <constraint firstItem="hiw-94-4Xm" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="hcU-gG-OJB"/>
+                            <constraint firstItem="MHr-JT-oc2" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="x7m-CI-my3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pbo-go-37w"/>
