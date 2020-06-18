@@ -215,6 +215,33 @@ Parameter | Type | Description | Default
 animatedScaleWhenHighlighted | CGFloat  | Animation scale when highlighted.  | 1.0 
 animatedScaleDurationWhenHighlighted | Double  | Animation scale duration when highlighted.  | 0.2 
 
+###### - Ripple
+
+<img src="Screenshot/Ripple1_Btn.gif" alt="" width="200"/> <img src="Screenshot/Ripple2_Btn.gif" alt="" width="200"/> <img src="Screenshot/Ripple3_Btn.gif" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+ripple | Bool  | Enable ripple animation.  | false 
+rippleColor | UIColor  | The color of the ripple animation.  | UIColor(white: 1.0, alpha: 0.3) 
+rippleSpeed | Double  | The speed of the ripple animation.  | 1.0 
+
+###### - Image
+
+<img src="Screenshot/Image25_Btn.png" alt="" width="200"/> <img src="Screenshot/Image50_Btn.png" alt="" width="200"/> <img src="Screenshot/Image75_Btn.png" alt="" width="200"/> <img src="Screenshot/Image100_Btn.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+imageViewContentMode | Int  | Options to specify how a view adjusts its content when its size changes. * [ContentMode](https://developer.apple.com/documentation/uikit/uiview/contentmode) | 0 
+imageAlpha | CGFloat  | The image view's alpha value. | 1.0 
+
+###### - Underline
+
+<img src="Screenshot/Underline_Btn.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+isUnderline | Bool  | Enable underline.  | false 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

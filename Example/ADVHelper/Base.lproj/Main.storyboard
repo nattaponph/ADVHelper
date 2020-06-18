@@ -105,7 +105,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-OV-tGZ" customClass="TextView" customModule="ADVHelper">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-OV-tGZ" customClass="TextView" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="234" width="311" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -145,7 +145,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Placeholder"/>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-QO-qNq" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-QO-qNq" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="350" width="311" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fes-xX-DaO"/>
@@ -187,7 +187,7 @@
                                             <segue destination="Cy9-T8-ciq" kind="show" id="k6Z-7l-5nu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-06-vma" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-06-vma" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="406" width="147.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="szN-7V-cki"/>
@@ -226,7 +226,7 @@
                                             <segue destination="rU3-lD-FuZ" kind="show" id="7aI-5k-AL8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-i4-nSL" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-i4-nSL" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="179.5" y="406" width="147.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2O9-fX-kvo"/>
@@ -427,6 +427,8 @@
                                     <constraint firstAttribute="height" constant="40" id="Plg-Pm-8ej"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -441,23 +443,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="1" height="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleWhenHighlighted">
-                                        <real key="value" value="0.80000000000000004"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderline" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onButtonClicked:" destination="Cy9-T8-ciq" eventType="touchUpInside" id="omL-cz-Fla"/>
