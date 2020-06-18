@@ -507,7 +507,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-X7-vna" customClass="TextView" customModule="ADVHelper">
-                                <rect key="frame" x="62.5" y="273.5" width="250" height="100"/>
+                                <rect key="frame" x="62.5" y="16" width="250" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cHo-P9-h2M"/>
@@ -535,15 +535,72 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocoapods_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jai-mf-nVj" customClass="ImageView" customModule="ADVHelper">
+                                <rect key="frame" x="87.5" y="-100" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ghi-Bh-veT"/>
+                                    <constraint firstAttribute="width" constant="200" id="O4c-Dh-1f0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmk-cp-mMD" customClass="View" customModule="ADVHelper">
+                                <rect key="frame" x="87.5" y="-100" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4ZZ-HE-bNl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Y1i-3Q-hyw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="2" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Bba-X7-vna" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="8Uu-Ad-tG5"/>
-                            <constraint firstItem="Bba-X7-vna" firstAttribute="centerY" secondItem="nyZ-q8-Om1" secondAttribute="centerY" id="BHt-DC-ua4"/>
+                            <constraint firstItem="Bba-X7-vna" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="AoT-hU-78N"/>
                             <constraint firstItem="MHr-JT-oc2" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="CJc-vK-MnG"/>
+                            <constraint firstItem="Wmk-cp-mMD" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="KNa-8c-LSX"/>
+                            <constraint firstItem="Wmk-cp-mMD" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="-100" id="TdI-kf-1TB"/>
                             <constraint firstItem="8eq-Pm-Hs4" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="VG9-bL-26K"/>
+                            <constraint firstItem="jai-mf-nVj" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="Xdo-TX-qDa"/>
                             <constraint firstItem="8eq-Pm-Hs4" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="ayd-cj-QUF"/>
                             <constraint firstItem="hiw-94-4Xm" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="cV0-2o-N3t"/>
+                            <constraint firstItem="jai-mf-nVj" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="-100" id="es6-Jx-2Lh"/>
                             <constraint firstItem="hiw-94-4Xm" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="hcU-gG-OJB"/>
                             <constraint firstItem="MHr-JT-oc2" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="x7m-CI-my3"/>
                         </constraints>
@@ -626,6 +683,7 @@
     </scenes>
     <resources>
         <image name="checked" width="32" height="32"/>
+        <image name="cocoapods_icon" width="512" height="512"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="unchecked" width="32" height="32"/>
     </resources>

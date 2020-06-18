@@ -144,6 +144,11 @@ Output
 
 #### Using Button programmatically
 
+Connect the UI to Code
+```swift
+@IBOutlet weak var buttonBtn: Button!
+```
+
 ###### - Localize
 
 Define text with `localizeKey`
@@ -253,6 +258,11 @@ isUnderline | Bool  | Enable underline.  | false
 
 #### Using Label programmatically
 
+Connect the UI to Code
+```swift
+@IBOutlet weak var titleLabel: Label!
+```
+
 ###### - Localize
 
 Define text with `localizeKey`
@@ -306,6 +316,11 @@ isUnderline | Bool  | Enable underline.  | false
 ### - TextField
 
 #### Using TextField programmatically
+
+Connect the UI to Code
+```swift
+@IBOutlet weak var textFieldBox: TextField!
+```
 
 ###### - Localize
 
@@ -375,6 +390,11 @@ paddingRightCustom | CGFloat  | Pads the view along right edges by the specified
 
 #### Using TextView programmatically
 
+Connect the UI to Code
+```swift
+@IBOutlet weak var textViewBox: TextView!
+```
+
 ###### - Localize
 
 Define placeholder with `localizeKey`
@@ -426,6 +446,132 @@ Parameter | Type | Description | Default
 ------------ | ------------- | ------------- | ------------- 
 minHeight | CGFloat | The minimum height limit. (0 means no limit) | 0 
 maxHeight | CGFloat | The maximum height limit. (0 means no limit) | 0 
+
+###### - Padding
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 8 
+paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 8 
+paddingTopCustom | CGFloat  | Pads the view along top edges by the specified amount. | 8 
+paddingBottomCustom | CGFloat  | Pads the view along bottom edges by the specified amount. | 8 
+
+### - ImageView
+
+#### Using ImageView programmatically
+
+Connect the UI to Code
+```swift
+@IBOutlet weak var imageView: ImageView!
+```
+
+#### Using ImageView in Storyboard
+
+The steps for use
+1. Drag a UIImageView into Storyboard.
+2. Set class to `ImageView`
+3. Set up attributes inspection.
+
+###### - Border
+
+<img src="Screenshot/Border_ImagetView.png" alt="" width="250"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+<img src="Screenshot/CornerRadius_ImagetView.png" alt="" width="250"/> <img src="Screenshot/CornerRadiusFull_ImagetView.png" alt="" width="250"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
+
+### - View
+
+#### Using View programmatically
+
+Connect the UI to Code
+```swift
+@IBOutlet weak var view: View!
+```
+
+#### Using View in Storyboard
+
+The steps for use
+1. Drag a UIView into Storyboard.
+2. Set class to `View`
+3. Set up attributes inspection.
+
+###### - Border
+
+<img src="Screenshot/Border_View.png" alt="" width="250"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+###### - Corner Radius
+
+<img src="Screenshot/CornerRadius_View.png" alt="" width="250"/> <img src="Screenshot/CornerRadiusFull_View.png" alt="" width="250"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+cornerRadius | CGFloat  | The radius to use when drawing rounded corners for the layer’s background.  | 0 
+
+###### - Shadow
+
+<img src="Screenshot/Shadow_View.png" alt="" width="200"/> <img src="Screenshot/Shadow2_View.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+shadowColor | UIColor  | The color of the layer’s shadow. | UIColor.clear 
+shadowOpacity | Float  | The opacity of the layer’s shadow. | 0 
+shadowOffset | CGSize  | The offset (in points) of the layer’s shadow. | CGSize.zero 
+shadowRadius | CGFloat  | The blur radius (in points) used to render the layer’s shadow. | 0 
+
+###### - Gradient Background
+
+<img src="Screenshot/GradientBackground_View.png" alt="" width="200"/> <img src="Screenshot/GradientBackground2_View.png" alt="" width="200"/>
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+gradientEnabled | Bool  | Enable gradient background.  | false 
+gradientStartColor | UIColor  | Start color gradient background.  | UIColor.clear 
+gradientEndColor | UIColor  | End color gradient background.  | UIColor.clear 
+gradientHorizontal | Bool  | Is the horizontal gradient background.  | false 
+
+### - TableView
+
+#### Using TableView programmatically
+
+Connect the UI to Code
+```swift
+@IBOutlet weak var dataTableView: TableView!
+```
+
+###### - Image Size
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+imageSizePercentage | [Percentage](Source/Enum/Percentage.swift) | The image size, in percentage of the TableView size. | percentage75 
+
+#### Using TableView in Storyboard
+
+The steps for use
+1. Drag a UITableView into Storyboard.
+2. Set class to `TableView`
+3. Set up attributes inspection.
+
+###### - Border
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
 
 ## Example
 

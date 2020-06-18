@@ -90,7 +90,7 @@ extension ExampleTableViewController: UITableViewDataSource, UITableViewDelegate
             
 //            dataTableView.setEmptyView(title: "You don't have any contact.", message: "Your contacts will be in here.")
             
-            dataTableView.setEmptyView(title: "You don't have any contact.", message: "Your contacts will be in here.", messageImage: #imageLiteral(resourceName: "checked"), animated: true)
+            dataTableView.setEmptyView(title: "The title no data.", message: "The message no data.", messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
         } else {
             dataTableView.restore()
         }
