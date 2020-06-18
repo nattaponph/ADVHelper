@@ -82,8 +82,6 @@ extension ExampleTableViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if names.count == 0 {
-            dataTableView.imageSizePercentage = .percentage80
-            
 //            dataTableView.setEmptyView(messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
             
 //            dataTableView.setEmptyView(title: "Data not found.")

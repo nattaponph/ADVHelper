@@ -82,15 +82,13 @@ extension ExampleCollectionViewController: UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if names.count == 0 {
-            dataCollectionView.imageSizePercentage = .percentage80
+//            dataCollectionView.setEmptyView(messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
             
-//            dataTableView.setEmptyView(messageImage: #imageLiteral(resourceName: "checked"), animated: true)
+//            dataCollectionView.setEmptyView(title: "Data not found.")
             
-//            dataTableView.setEmptyView(title: "You don't have any contact.")
+//            dataCollectionView.setEmptyView(title: "Oops!", message: "Data not found.")
             
-//            dataTableView.setEmptyView(title: "You don't have any contact.", message: "Your contacts will be in here.")
-            
-            dataCollectionView.setEmptyView(title: "You don't have any contact.", message: "Your contacts will be in here.", messageImage: #imageLiteral(resourceName: "checked"), animated: true)
+            dataCollectionView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
         } else {
             dataCollectionView.restore()
         }

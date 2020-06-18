@@ -583,6 +583,19 @@ messageFont | UIFont | The font of message. | UIFont(name: "HelveticaNeue-Regula
 
 ###### - Empty View
 
+Example of use in `numberOfRowsInSection`
+```swift
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    if names.count == 0 {
+        dataTableView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
+    } else {
+        dataTableView.restore()
+    }
+    
+    return names.count
+}
+```
+
 - Function `setEmptyView` for show image only.
 
 Example of use
@@ -626,6 +639,15 @@ dataTableView.setEmptyView(title: "Oops!", message: "Data not found.", messageIm
 Output
 
 <img src="Screenshot/Data_Not_Found_Img_Title_Message_TableView.gif" alt="" width="318"/>
+
+###### - Restore
+
+The restore TableView
+
+Example of use
+```swift
+dataTableView.restore()
+```
 
 #### Using TableView in Storyboard
 
@@ -680,6 +702,19 @@ messageFont | UIFont | The font of message. | UIFont(name: "HelveticaNeue-Regula
 
 ###### - Empty View
 
+Example of use in `numberOfItemsInSection`
+```swift
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    if names.count == 0 {
+        dataCollectionView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
+    } else {
+        dataCollectionView.restore()
+    }
+    
+    return names.count
+}
+```
+
 - Function `setEmptyView` for show image only.
 
 Example of use
@@ -724,6 +759,15 @@ Output
 
 <img src="Screenshot/Data_Not_Found_Img_Title_Message_TableView.gif" alt="" width="318"/>
 
+###### - Restore
+
+The restore CollectionView
+
+Example of use
+```swift
+dataCollectionView.restore()
+```
+
 #### Using CollectionView in Storyboard
 
 The steps for use
@@ -735,8 +779,8 @@ The steps for use
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
-borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
-borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+borderColor | UIColor  | The color of the layer’s border. | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border. | 0 
 
 ## Example
 
