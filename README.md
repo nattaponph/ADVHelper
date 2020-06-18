@@ -555,15 +555,180 @@ Connect the UI to Code
 
 ###### - Image Size
 
+Custom Size Image
+```swift
+dataTableView.imageSizePercentage = .percentage75
+```
+
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
 imageSizePercentage | [Percentage](Source/Enum/Percentage.swift) | The image size, in percentage of the TableView size. | percentage75 
+
+###### - Color & Font
+
+Custom Color & Font
+```swift
+dataTableView.titleColor = UIColor.black
+dataTableView.titleFont = UIFont(name: "HelveticaNeue-Bold", size: 18)
+dataTableView.messageColor = UIColor.lightGray
+dataTableView.messageFont = UIFont(name: "HelveticaNeue-Regular", size: 17)
+```
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+titleColor | UIColor | The color of title. | UIColor.black 
+titleFont | UIFont | The font of title. | UIFont(name: "HelveticaNeue-Bold", size: 18) 
+messageColor | UIColor | The color of message. | UIColor.lightGray 
+messageFont | UIFont | The font of message. | UIFont(name: "HelveticaNeue-Regular", size: 17) 
+
+###### - Empty View
+
+- Function `setEmptyView` for show image only.
+
+Example of use
+```swift
+dataTableView.setEmptyView(messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Img_TableView.gif" alt="" width="318"/>
+
+- Function `setEmptyView` for show title only.
+
+Example of use
+```swift
+dataTableView.setEmptyView(title: "Data not found.")
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Title_TableView.png" alt="" width="318"/>
+
+- Function `setEmptyView` for show title and message.
+
+Example of use
+```swift
+dataTableView.setEmptyView(title: "Oops!", message: "Data not found.")
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Title_Message_TableView.png" alt="" width="318"/>
+
+- Function `setEmptyView` for show image and title and message.
+
+Example of use
+```swift
+dataTableView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Img_Title_Message_TableView.gif" alt="" width="318"/>
 
 #### Using TableView in Storyboard
 
 The steps for use
 1. Drag a UITableView into Storyboard.
 2. Set class to `TableView`
+3. Set up attributes inspection.
+
+###### - Border
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+borderColor | UIColor  | The color of the layer’s border.  | UIColor.clear 
+borderWidth | CGFloat  | The width of the layer’s border.  | 0 
+
+### - CollectionView
+
+#### Using CollectionView programmatically
+
+Connect the UI to Code
+```swift
+@IBOutlet weak var dataCollectionView: CollectionView!
+```
+
+###### - Image Size
+
+Custom Size Image
+```swift
+dataCollectionView.imageSizePercentage = .percentage75
+```
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+imageSizePercentage | [Percentage](Source/Enum/Percentage.swift) | The image size, in percentage of the CollectionView size. | percentage75 
+
+###### - Color & Font
+
+Custom Color & Font
+```swift
+dataCollectionView.titleColor = UIColor.black
+dataCollectionView.titleFont = UIFont(name: "HelveticaNeue-Bold", size: 18)
+dataCollectionView.messageColor = UIColor.lightGray
+dataCollectionView.messageFont = UIFont(name: "HelveticaNeue-Regular", size: 17)
+```
+
+Parameter | Type | Description | Default 
+------------ | ------------- | ------------- | ------------- 
+titleColor | UIColor | The color of title. | UIColor.black 
+titleFont | UIFont | The font of title. | UIFont(name: "HelveticaNeue-Bold", size: 18) 
+messageColor | UIColor | The color of message. | UIColor.lightGray 
+messageFont | UIFont | The font of message. | UIFont(name: "HelveticaNeue-Regular", size: 17) 
+
+###### - Empty View
+
+- Function `setEmptyView` for show image only.
+
+Example of use
+```swift
+dataCollectionView.setEmptyView(messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Img_TableView.gif" alt="" width="318"/>
+
+- Function `setEmptyView` for show title only.
+
+Example of use
+```swift
+dataCollectionView.setEmptyView(title: "Data not found.")
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Title_TableView.png" alt="" width="318"/>
+
+- Function `setEmptyView` for show title and message.
+
+Example of use
+```swift
+dataCollectionView.setEmptyView(title: "Oops!", message: "Data not found.")
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Title_Message_TableView.png" alt="" width="318"/>
+
+- Function `setEmptyView` for show image and title and message.
+
+Example of use
+```swift
+dataCollectionView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
+```
+  
+Output
+
+<img src="Screenshot/Data_Not_Found_Img_Title_Message_TableView.gif" alt="" width="318"/>
+
+#### Using CollectionView in Storyboard
+
+The steps for use
+1. Drag a UICollectionView into Storyboard.
+2. Set class to `CollectionView`
 3. Set up attributes inspection.
 
 ###### - Border

@@ -84,13 +84,13 @@ extension ExampleTableViewController: UITableViewDataSource, UITableViewDelegate
         if names.count == 0 {
             dataTableView.imageSizePercentage = .percentage80
             
-//            dataTableView.setEmptyView(messageImage: #imageLiteral(resourceName: "checked"), animated: true)
+//            dataTableView.setEmptyView(messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
             
-//            dataTableView.setEmptyView(title: "You don't have any contact.")
+//            dataTableView.setEmptyView(title: "Data not found.")
             
-//            dataTableView.setEmptyView(title: "You don't have any contact.", message: "Your contacts will be in here.")
+//            dataTableView.setEmptyView(title: "Oops!", message: "Data not found.")
             
-            dataTableView.setEmptyView(title: "The title no data.", message: "The message no data.", messageImage: #imageLiteral(resourceName: "no_data_icon"), animated: true)
+            dataTableView.setEmptyView(title: "Oops!", message: "Data not found.", messageImage: #imageLiteral(resourceName: "data_not_found_icon"), animated: true)
         } else {
             dataTableView.restore()
         }
