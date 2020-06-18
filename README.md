@@ -788,7 +788,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Author
 
-nattaponph, nattaponph58@nu.ac.th
+nattaponph, nattapon.phothima@gmail.com
 
 ## License
 
