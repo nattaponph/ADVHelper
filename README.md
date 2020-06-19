@@ -5,6 +5,24 @@
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift)
 
+* [Requirements](#Requirements)
+* [Installation](#Installation)
+* [Usage](#Usage)
+  * [ADVHelper](#--ADVHelper)
+  * [Localize](#--Localize)
+  * [String Extension](#--String-Extension)
+  * [Label](#--Label)
+  * [TextField](#--TextField)
+  * [TextView](#--TextView)
+  * [ImageView](#--ImageView)
+  * [View](#--View)
+  * [TableView](#--TableView)
+  * [CollectionView](#--CollectionView)
+* [Example](#Example)
+* [Author](#Author)
+* [License](#License)
+* [Credits](#Credits)
+
 ## Requirements
 
 iOS 12.0 or above
@@ -377,14 +395,14 @@ gradientHorizontal | Bool  | Is the horizontal gradient background.  | false
 
 ###### - Padding
 
-None | Left | Right | Left & Right
+Left: 0, Right: 0  | Left: 8, Right: 0 | Left: 0, Right: 8 | Left: 8, Right: 8
 ------------ | ------------- | ------------- | ------------- 
 <img src="Screenshot/PaddingNo_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingL_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingR_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingLR_TextField.png" alt="" width="200"/> 
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
-paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 0 
-paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 0 
+paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 8 
+paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 8 
 
 ### - TextView
 
