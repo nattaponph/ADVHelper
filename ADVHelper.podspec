@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ADVHelper'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'ADVHelper is an healper for IBDesignable and Localizable and String Extension.'
 
 # This description is used to generate tags and improve search results.
