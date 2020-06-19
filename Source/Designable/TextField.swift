@@ -11,33 +11,48 @@ import UIKit
 @IBDesignable
 open class TextField: UITextField {
     
+    open override func awakeFromNib() {
+        setupLayer()
+    }
+    
+    open override func prepareForInterfaceBuilder() {
+        setupLayer()
+    }
+    
     override open func layoutSubviews() {
         super.layoutSubviews()
         
         gradient?.frame = self.layer.bounds
     }
     
+    func setupLayer() {
+        if paddingLeftCustom == 8 {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: paddingLeftCustom, height: frame.size.height))
+            self.leftView = paddingView
+            self.leftViewMode = .always
+        }
+        if paddingRightCustom == 8 {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: paddingRightCustom, height: frame.size.height))
+            self.rightView = paddingView
+            self.rightViewMode = .always
+        }
+    }
+    
     //MARK: - Padding
     
-    @IBInspectable var paddingLeftCustom: CGFloat {
-        get {
-            return leftView!.frame.size.width
-        }
-        set {
-            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: frame.size.height))
-            leftView = paddingView
-            leftViewMode = .always
+    @IBInspectable open var paddingLeftCustom: CGFloat = 8 {
+        didSet {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: paddingLeftCustom, height: frame.size.height))
+            self.leftView = paddingView
+            self.leftViewMode = .always
         }
     }
 
-    @IBInspectable var paddingRightCustom: CGFloat {
-        get {
-            return rightView!.frame.size.width
-        }
-        set {
-            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: frame.size.height))
-            rightView = paddingView
-            rightViewMode = .always
+    @IBInspectable open var paddingRightCustom: CGFloat = 8 {
+        didSet {
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: paddingRightCustom, height: frame.size.height))
+            self.rightView = paddingView
+            self.rightViewMode = .always
         }
     }
     
@@ -46,12 +61,18 @@ open class TextField: UITextField {
     @IBInspectable open var borderColor: UIColor = UIColor.clear {
         didSet {
             self.layer.borderColor = borderColor.cgColor
+            if borderColor != UIColor.clear && borderWidth > 0 {
+                self.borderStyle = .none
+            }
         }
     }
     
     @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             self.layer.borderWidth = borderWidth
+            if borderColor != UIColor.clear && borderWidth > 0 {
+                self.borderStyle = .none
+            }
         }
     }
     

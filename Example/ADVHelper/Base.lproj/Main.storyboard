@@ -105,7 +105,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-OV-tGZ" customClass="TextView" customModule="ADVHelper">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-OV-tGZ" customClass="TextView" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="234" width="311" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -145,7 +145,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Placeholder"/>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-QO-qNq" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-QO-qNq" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="350" width="311" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fes-xX-DaO"/>
@@ -187,7 +187,7 @@
                                             <segue destination="Cy9-T8-ciq" kind="show" id="k6Z-7l-5nu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-06-vma" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rod-06-vma" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="16" y="406" width="147.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="szN-7V-cki"/>
@@ -226,7 +226,7 @@
                                             <segue destination="rU3-lD-FuZ" kind="show" id="7aI-5k-AL8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-i4-nSL" customClass="Button" customModule="ADVHelper">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-i4-nSL" customClass="Button" customModule="ADVHelper">
                                         <rect key="frame" x="179.5" y="406" width="147.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2O9-fX-kvo"/>
@@ -462,8 +462,8 @@
                                     <action selector="onButtonClicked:" destination="Cy9-T8-ciq" eventType="touchUpInside" id="omL-cz-Fla"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="An object that displays an editable text area in your interface." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-JT-oc2" customClass="TextField" customModule="ADVHelper">
-                                <rect key="frame" x="112.5" y="16" width="150" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-JT-oc2" customClass="TextField" customModule="ADVHelper">
+                                <rect key="frame" x="112.5" y="303.5" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EbW-Ho-jK9"/>
                                     <constraint firstAttribute="width" constant="150" id="gCC-FB-ioQ"/>
@@ -480,6 +480,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Placeholder"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                         <real key="value" value="1"/>
@@ -498,12 +501,6 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
-                                        <real key="value" value="-8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-X7-vna" customClass="TextView" customModule="ADVHelper">
@@ -600,9 +597,9 @@
                             <constraint firstItem="jai-mf-nVj" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="Xdo-TX-qDa"/>
                             <constraint firstItem="8eq-Pm-Hs4" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="ayd-cj-QUF"/>
                             <constraint firstItem="hiw-94-4Xm" firstAttribute="centerX" secondItem="nyZ-q8-Om1" secondAttribute="centerX" id="cV0-2o-N3t"/>
+                            <constraint firstItem="MHr-JT-oc2" firstAttribute="centerY" secondItem="nyZ-q8-Om1" secondAttribute="centerY" id="dG3-CB-q10"/>
                             <constraint firstItem="jai-mf-nVj" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="-100" id="es6-Jx-2Lh"/>
                             <constraint firstItem="hiw-94-4Xm" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="hcU-gG-OJB"/>
-                            <constraint firstItem="MHr-JT-oc2" firstAttribute="top" secondItem="feG-l8-I7c" secondAttribute="bottom" constant="16" id="x7m-CI-my3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pbo-go-37w"/>

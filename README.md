@@ -377,14 +377,14 @@ gradientHorizontal | Bool  | Is the horizontal gradient background.  | false
 
 ###### - Padding
 
-None | Left | Right | Left & Right
+Left: 0, Right: 0  | Left: 8, Right: 0 | Left: 0, Right: 8 | Left: 8, Right: 8
 ------------ | ------------- | ------------- | ------------- 
 <img src="Screenshot/PaddingNo_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingL_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingR_TextField.png" alt="" width="200"/> | <img src="Screenshot/PaddingLR_TextField.png" alt="" width="200"/> 
 
 Parameter | Type | Description | Default 
 ------------ | ------------- | ------------- | ------------- 
-paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 0 
-paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 0 
+paddingLeftCustom | CGFloat  | Pads the view along left edges by the specified amount. | 8 
+paddingRightCustom | CGFloat  | Pads the view along right edges by the specified amount. | 8 
 
 ### - TextView
 
